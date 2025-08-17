@@ -1,0 +1,12 @@
+Section,Points Used,Decreases Count,Net Δ% (last 5),OLS Slope (FPD / well#),Needs Attention?,Reason
+"34""",5,2,-2.44,-17.9313,YES,slope<0 & 2 decreases
+"24""",5,1,292.55,414.8035,NO,minor dips
+"22""",3,1,-5.09,-26.4348,NO,minor dips
+"18-5/8""",5,2,101.83,148.0882,NO,minor dips
+"16""",5,2,-28.02,-140.0181,YES,slope<0 & 2 decreases | net -28.0%
+"13-3/8""",5,2,-9.51,-86.965,YES,slope<0 & 2 decreases
+"12-1/4""",5,1,59.39,29.6691,NO,minor dips
+"9-5/8""",5,1,47.4,292.2557,NO,minor dips
+"8-3/8""",5,2,-11.36,-62.1091,YES,slope<0 & 2 decreases | net -11.4%
+"7""",5,2,-21.69,-344.5055,YES,slope<0 & 2 decreases | net -21.7%
+"6-1/8""",4,1,-7.37,-126.7628,NO,minor dips
