@@ -1,4 +1,0 @@
-out/*
-!.gitkeep
-__pycache__/
-*.pyc
