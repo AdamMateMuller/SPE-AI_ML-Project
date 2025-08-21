@@ -37,12 +37,7 @@ Section,Depth
 8-3/8",13709
 6-1/8",18993
 
-markdown
-Copy
-Edit
 - **Privacy/Ethics:** only sample/synthetic data used; no confidential identifiers.
-
----
 
 ## 4. Methods & Workflow
 1. **Load & detect:** read Excel, normalize headers, map FPD columns to sections (robust matching; skip planned/design/target).
@@ -53,8 +48,6 @@ Edit
 4. **Profiles:** build **P10 = max(last 5)** and **P50 = mean(last 5)** FPD per section.
 5. **Time prediction:** convert FPD → **days** using final drilling depths; casing time uses plateau logic.
 6. **Visualization:** export **Depth vs. Time** curves (P10 vs P50) and CSV/PNG artifacts.
-
----
 
 ## 5. Code Structure (summary of the 3 scripts)
 Depth vs. Time Graph Tools/
@@ -69,16 +62,10 @@ Depth vs. Time Graph Tools/
 ├─ requirements.txt
 └─ Final_Project_Report.md
 
-pgsql
-Copy
-Edit
-
 **How they work (brief):**
 - `extract_highest_fpd.py` — finds the best “actual” FPD column per section (skips planned/design), reports **max FPD** with the original header for traceability.  
 - `drilling_curve.py` — uses **max FPD** and `depths.csv` to compute **section days** and an overall **depth-vs-time** curve; saves table + PNG.  
 - `last5_flags_p10p50.py` — auto-detects per-well sheet/header, builds **last-5** sectional FPD table, computes **Needs Attention** flags, creates **P10/P50** FPD profiles, converts to **predicted times**, and plots **P10 vs P50** curves.
-
----
 
 ## 6. Reproducibility — How to Run
 > Run these from **inside** the folder: `cd "Depth vs. Time Graph Tools"`
