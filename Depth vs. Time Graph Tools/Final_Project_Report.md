@@ -1,4 +1,4 @@
-# Final Project Report — Depth vs. Time Tools
+# Final Project Report — Depth vs. Time Graph Tools
 
 > Course: SPE AI/ML  
 > Author: Adam Muller  
